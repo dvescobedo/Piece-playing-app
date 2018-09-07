@@ -14,10 +14,10 @@ Released under the MIT license: http://jsbin.mit-license.org
  <meta name="viewport" content="width=device-width">
  <meta name="apple-mobile-web-app-capable" content="yes">
  <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
- <script src="https://cdn.jsdelivr.net/howler.js/2.0.0/howler.js"></script>
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+ <script src="dist/howler.js"></script>
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
   <title>JS Bin</title>
 
@@ -104,9 +104,27 @@ Released under the MIT license: http://jsbin.mit-license.org
       <button id = "pause11" class="btn btn-danger">PAUSE</button>
       <button  id = "stop11" class="btn btn-danger">STOP</button>
    </div>
+<h2>Pieza 5</h2>
+</div>
+<div id="container" class="container" align="center">
+  <div class="btn-group btn-group-lg">
+       <button id = "play12" class="btn btn-primary">PLAY</button>
+      <button id = "pause12" class="btn btn-primary">PAUSE</button>
+      <button  id = "stop12" class="btn btn-primary">STOP</button>
+   </div>
+     <div class="btn-group btn-group-lg">
+       <button id = "play13" class="btn btn-success">PLAY</button>
+      <button id = "pause13" class="btn btn-success">PAUSE</button>
+      <button  id = "stop13" class="btn btn-success">STOP</button>
+   </div>
+        <div class="btn-group btn-group-lg">
+       <button id = "play14" class="btn btn-warning">PLAY</button>
+      <button id = "pause14" class="btn btn-warning">PAUSE</button>
+      <button  id = "stop14" class="btn btn-warning">STOP</button>
+   </div>
 </div>
   <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
-  <script src="https://cdn.jsdelivr.net/howler.js/2.0.0/howler.js"></script>
+  <script src="dist/howler.js"></script>
 
 <script id="jsbin-javascript">
 $(document).ready(function(){
@@ -328,6 +346,59 @@ $(document).ready(function(){
     sound11.stop();
   });
   
+   var sound12 = new Howl({
+    
+    src: ['pieza5sample1.mp3'],
+  
+  }); // end of sound declaration/assignment
+  
+  $('#play12').click(function(){
+    sound12.play();
+  });
+  
+  $('#pause12').click(function(){
+    sound12.pause();
+  });
+  
+  $('#stop12').click(function(){
+    sound12.stop();
+  });
+  
+    var sound13 = new Howl({
+    
+    src: ['pieza5sample2.mp3'],
+  
+  }); // end of sound declaration/assignment
+  
+  $('#play13').click(function(){
+    sound13.play();
+  });
+  
+  $('#pause13').click(function(){
+    sound13.pause();
+  });
+  
+  $('#stop13').click(function(){
+    sound13.stop();
+  });
+  
+      var sound14 = new Howl({
+    
+    src: ['pieza5sample3.mp3'],
+  
+  }); // end of sound declaration/assignment
+  
+  $('#play14').click(function(){
+    sound14.play();
+  });
+  
+  $('#pause14').click(function(){
+    sound14.pause();
+  });
+  
+  $('#stop15').click(function(){
+    sound15.stop();
+  });
   
 }); // end of ready
 </script>
